@@ -1,32 +1,37 @@
-<script>
-	import Footer from '../components/Footer.svelte';
-	import Header from '../components/Header.svelte';
-	import '../app.css';
-	let y;
-	let innerWidth = 0;
-	let innerHeight = 0;
+<main class="flex flex-col flex-1 p-4">
+    <section
+            id="introPage"
+            class="grid grid-cols-1 lg:grid-cols-2 gap-10 py-8 sm:py-14"
+        >
+            <div
+                class="flex flex-col lg:justify-center text-center lg:text-left gap-6 md:gap-8 lg:gap-10"
+            >
+                <h2 class="font-semibold text-4xl sm:text-5xl md:text-6xl">
+                    Hi! I'm <span class="poppins text-green-400">Tommy</span> Lane
+                    <br />Computer
+                    <span class="poppins text-green-400">Scientist</span>
+                </h2>
+                <p class="text-base sm:text-lg md:text-xl">
+                    My <span class="text-green-400"> favorite tech</span> includes JavaScript
+                    (NEXT.JS or SvelteKit), TailwindCSS, Node.js + Express.js & PostgreSQL
+                    or Firebase/Firestore!
+                </p>
+                <button
+                    class="blueShadow mx-auto lg:mr-auto lg:ml-0 text-base sm:text-lg md:text-xl poppins relative overflow-hidden px-6 py-3 group rounded-full bg-white text-slate-950"
+                >
+                    <div
+                        class="absolute top-0 right-full w-full h-full bg-green-400 opacity-20 group-hover:translate-x-full z-0 duration-200"
+                    />
+                    <h4 class="relative z-9">Get in touch &rarr;</h4>
+                </button>
+            </div>
+            <div class="relative shadow-2xl grid place-items-center">
+                <img
+                    src={"images/profile.png"}
+                    alt="Tommy Lane"
+                    class="object-cover z-[2] max-h-[70vh]"
+                />
+            </div>
 
-	function goTop() {
-		document.body.scrollIntoView();
-	}
-</script>
-
-<div
-	class="container relative flex flex-col max-w-[1400px] mx-auto w-full text-sm sm:text-base min-h-screen"
->
-	<div
-		class={'fixed bottom-0 w-full duration-200 flex p-10 z-[10] ' +
-			(y > 0 ? ' opacity-full pointer-events-auto' : ' pointer-events-none opacity-0')}
-	>
-		<button
-			on:click={goTop}
-			class="ml-auto rounded-full bg-slate-900 text-violet-400 px-3 sm:px-4 hover:bg-slate-800 cursor-pointer aspect-square grid place-items-center"
-		>
-			<i class="fa-solid fa-arrow-up" />
-		</button>
-	</div>
-	<Header {y} {innerHeight} />
-	<slot />
-	<Footer />
-</div>
-<svelte:window bind:scrollY={y} bind:innerHeight bind:innerWidth />
+        </section>
+    </main>
