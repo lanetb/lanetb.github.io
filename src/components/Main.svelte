@@ -47,7 +47,7 @@
 	</section>
 	<section
 		id="about"
-		class="py-20 pt-10 lg:pt-10 lg:py-32 flex flex-col gap-16 sm:gap-20 md:gap-24 relative"
+		class="py-20 pt-20 lg:pt-20 lg:py-32 flex flex-col gap-16 sm:gap-20 md:gap-24 relative"
 	>
 		<!-- <div class="z-[-1] bg-violet-950 w-screen left-1/2 -translate-x-1/2 top-0 h-full absolute"> </div> -->
 		<div
