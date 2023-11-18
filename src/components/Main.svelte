@@ -4,20 +4,39 @@
 	let steps = [
 		{
 			name: 'KanBan Board App',
-			icon: 'fa-solid fa-cart-shopping',
-			description: ''
-				
-		},
-		{
-			name: 'Place Holder',
 			icon: 'fa-solid fa-list-check',
-			description:'placeholder'
+			description: 'A robust full-stack Kanban Board application, harnessing the power of Golang and MySQL for the backend, and seamlessly integrating it with a dynamic frontend built with HTML, CSS, and JavaScript.',
+			href: 'https://github.com/lanetb/Go-Kanban'
 				
 		},
 		{
-			name: 'Place Holder',
+			name: 'Classifier Implementation',
 			icon: 'fa-solid fa-diagram-project',
-			description: 'placeholder'
+			description:'Created and implemented Decision Tree, Naïve Bayes, NN, and CNN machine learning algorithms to build and compare classifiers on various datasets (MNIST, etc.) using Python and Python libraries (Keras, TensorFlow, etc.)'
+				
+		},
+		{
+			name: 'JMU Parking App',
+			icon: 'fa-solid fa-route',
+			description: 'Implemented Agile development practices and unit testing in a team of four to develop a HTML and CSS frontend and Flask and PostgreSQL backend parking analysis web app.'
+				
+		},
+		{
+			name: 'JMU Parking App',
+			icon: 'fa-solid fa-route',
+			description: 'Implemented Agile development practices and unit testing in a team of four to develop a HTML and CSS frontend and Flask and PostgreSQL backend parking analysis web app.'
+				
+		},
+		{
+			name: 'JMU Parking App',
+			icon: 'fa-solid fa-route',
+			description: 'Implemented Agile development practices and unit testing in a team of four to develop a HTML and CSS frontend and Flask and PostgreSQL backend parking analysis web app.'
+				
+		},
+		{
+			name: 'JMU Parking App',
+			icon: 'fa-solid fa-route',
+			description: 'Implemented Agile development practices and unit testing in a team of four to develop a HTML and CSS frontend and Flask and PostgreSQL backend parking analysis web app.'
 				
 		}
 	];
@@ -41,6 +60,8 @@
 				"Communication is key and it's a paramount value of mine. I believe in transparency and constructive communication above all else. This helps me develop deep relationships and ensures my effectiveness and productivity in any work space with any team."
 		}
 	];
+
+	let toggleProjects = false;
 </script>
 
 <main class="flex flex-col flex-1 p-20">
@@ -60,8 +81,8 @@
 				My <span class="text-green-400">favorite tech</span> Python, JavaScript(React or Sveltekit),
 				TailwindCSS, Golang + PostgreSQL, mySql or Firebase/Firestore!
 			</p>
-			<div class="flex flex-row gap-8">
-				<a type='button' class="blueShadow fa-brands fa-github fa-2xl text-6xl relative overflow-hidden group rounded-full" href="https://github.com/lanetb">
+			<div class="flex flex-row gap-8 mx-auto lg:mx-0">
+				<a type='button' class="blueShadow fa-brands fa-github fa-2xl text-6xl  relative overflow-hidden group rounded-full" href="https://github.com/lanetb">
 					<div
 						class="absolute top-0 right-full w-full h-full bg-green-400 opacity-20 group-hover:translate-x-full z-0 duration-200"
 					/>
@@ -71,14 +92,14 @@
 						class="absolute top-0 right-full w-full h-full bg-green-400 opacity-20 group-hover:translate-x-full z-0 duration-200"
 					/>
 				</a>
-				<button
-					class="blueShadow mx-auto lg:mr-auto lg:ml-0 text-base sm:text-lg md:text-xl poppins relative overflow-hidden px-6 py-3 group rounded-full bg-white text-slate-950"
+				<a type="button" href="mailto:tommy.lane@verizon.net"
+					class="blueShadow mx-auto lg:mr-auto ml-0 text-base sm:text-lg md:text-xl poppins relative overflow-hidden px-6 py-3 pt-4 group rounded-full bg-white text-slate-950"
 				>
 					<div
 						class="absolute top-0 right-full w-full h-full bg-green-400 opacity-20 group-hover:translate-x-full z-0 duration-200"
 					/>
-					<h4 class="relative z-9">Get in touch &rarr;</h4>
-				</button>
+					<h4 class="z-9 ">Get in touch &rarr;</h4>
+				</a>
 			</div>
 		</class>
 		<div class="relative shadow-2xl grid place-items-center">
@@ -115,29 +136,59 @@
 			{/each}
 		</div>
 	</section>
-	<section class="py-20 lg:py-32 flex flex-col gap-24" id="projects">
+	<section class="py-20 lg:py-32 flex flex-col gap-24 pb-0 lg:pb-0" id="projects">
 		<div class="flex flex-col gap-2 text-center">
-			<h6 class="text-large sm:text-xl md:text-2xl">A few of my creative endeavors.</h6>
+			<h6 class="text-large sm:text-xl md:text-2xl">A few of my programing projects.</h6>
 			<h3 class="font-semibold text-3xl sm:text-4xl md:text-5xl">
-				Curious to <span class="poppins text-green-400">see</span> my work?
+				 Take a <span class="poppins text-green-400">peek</span> my work!
 			</h3>
 		</div>
 		<div class="grid grid-cols-1 lg:grid-cols-3 gap-12 lg:gap-10">
 			<Step step={steps[0]}>
 				<p>
-					placeholeder
+					Developed a robust full-stack Kanban Board application, harnessing the power of <strong class="text-green-400">Golang and MySQL</strong> for the backend, and seamlessly integrating it with a dynamic frontend built with <strong class="text-green-400">HTML, CSS, and JavaScript</strong>.
 				</p>
 			</Step>
 			<Step step={steps[1]}>
 				<p>
-					placeholder
+					Created and implemented <strong class="text-green-400">Decision Tree, Naïve Bayes, NN, and CNN</strong> machine learning algorithms to build and compare classifiers on various datasets (MNIST, etc.) using <strong class="text-green-400">Python and Python libraries (Keras, TensorFlow, etc.)</strong>.
 				</p>
 			</Step>
 			<Step step={steps[2]}>
 				<p>
-					placeholder
+					Implemented <strong class="text-green-400">Agile development practices and unit testing</strong> in a team of four to develop a <strong class="text-green-400">HTML + CSS </strong> frontend and <strong class="text-green-400">Flask + PostgreSQL</strong> backend parking analysis web app.
 				</p>
 			</Step>
+			<!-- 
+			{#if toggleProjects}
+				<Step step={steps[3]}>
+					<p>
+						Developed a robust full-stack Kanban Board application, harnessing the power of <strong class="text-green-400">Golang and MySQL</strong> for the backend, and seamlessly integrating it with a dynamic frontend built with <strong class="text-green-400">HTML, CSS, and JavaScript</strong>.
+					</p>
+				</Step>
+				<Step step={steps[4]}>
+					<p>
+						Created and implemented <strong class="text-green-400">Decision Tree, Naïve Bayes, NN, and CNN</strong> machine learning algorithms to build and compare classifiers on various datasets (MNIST, etc.) using <strong class="text-green-400">Python and Python libraries (Keras, TensorFlow, etc.)</strong>.
+					</p>
+				</Step>
+				<Step step={steps[5]}>
+					<p>
+						Implemented <strong class="text-green-400">Agile development practices and unit testing</strong> in a team of four to develop a <strong class="text-green-400">HTML + CSS </strong> frontend and <strong class="text-green-400">Flask + PostgreSQL</strong> backend parking analysis web app.
+					</p>
+				</Step>
+			{/if}
+			
+		</div>
+		{#if !toggleProjects}
+			<div class="z-[11] w-auto flex align-top justify-center">
+				<button class="text-xl hover:text-green-400 w-30" on:click={() => {toggleProjects = true;}}>Load More Projects<br><i class="fa-solid fa-caret-down"></i></button>
+			</div>
+		{:else}
+			<div class="z-[11] w-auto flex align-top justify-center">
+				<button class="text-xl hover:text-green-400 w-30" on:click={() => {toggleProjects = false;}}><i class="fa-solid fa-caret-up"></i><br>Load Less Projects</button>
+			</div>
+		{/if}
+		-->
 		</div>
 	</section>
 </main>

@@ -4,7 +4,7 @@
     export let tabs = [
         { name: "About me", link: "#about" },
         { name: "Projects ", link: "#projects" },
-        { name: "Blog", link: "https://www.youtube.com/watch?v=dQw4w9WgXcQ" },
+        //{ name: "Blog", link: "https://www.youtube.com/watch?v=dQw4w9WgXcQ" },
         // { name: "Contact", link: "" },
         // {name: '', link: ''},
     ];
@@ -17,7 +17,7 @@
             : " py-6 bg-transparent border-transparent")}
 >
     <h1 class="font-medium">
-        <b class="font-bold poppins">Tommy</b> <span class="">Lane</span>
+        <b class="font-bold poppins">Tommy Lane</b>
     </h1>
     <div class="sm:flex items-center gap-4 hidden">
         {#each tabs as tab, index}
@@ -29,13 +29,13 @@
                 <p>{tab.name}</p>
             </a>
         {/each}
-        <button
+        <a type='button' href="mailto:tommy.lane@verizon.net"
             class="blueShadow relative overflow-hidden px-5 py-2 group rounded-full bg-white text-slate-950"
         >
             <div
                 class="absolute top-0 right-full w-full h-full bg-green-400 opacity-20 group-hover:translate-x-full z-0 duration-200"
             />
             <h4 class="relative z-9">Get in touch</h4>
-        </button>
+        </a>
     </div>
 </header>
