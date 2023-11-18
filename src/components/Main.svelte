@@ -12,13 +12,15 @@
 		{
 			name: 'Classifier Implementation',
 			icon: 'fa-solid fa-diagram-project',
-			description:'Created and implemented Decision Tree, Naïve Bayes, NN, and CNN machine learning algorithms to build and compare classifiers on various datasets (MNIST, etc.) using Python and Python libraries (Keras, TensorFlow, etc.)'
+			description:'Created and implemented Decision Tree, Naïve Bayes, NN, and CNN machine learning algorithms to build and compare classifiers on various datasets (MNIST, etc.) using Python and Python libraries (Keras, TensorFlow, etc.)',
+			href: 'https://github.com/lanetb/Machine-Learning'
 				
 		},
 		{
 			name: 'JMU Parking App',
 			icon: 'fa-solid fa-route',
-			description: 'Implemented Agile development practices and unit testing in a team of four to develop a HTML and CSS frontend and Flask and PostgreSQL backend parking analysis web app.'
+			description: 'Implemented Agile development practices and unit testing in a team of four to develop a HTML and CSS frontend and Flask and PostgreSQL backend parking analysis web app.',
+			href: 'https://github.com/lanetb/Parking-App'
 				
 		},
 		{
@@ -82,17 +84,17 @@
 				TailwindCSS, Golang + PostgreSQL, mySql or Firebase/Firestore!
 			</p>
 			<div class="flex flex-row gap-8 mx-auto lg:mx-0">
-				<a type='button' class="blueShadow fa-brands fa-github fa-2xl text-6xl  relative overflow-hidden group rounded-full" href="https://github.com/lanetb">
+				<a type='button' class="blueShadow fa-brands fa-github fa-2xl text-6xl  relative overflow-hidden group rounded-full" href="https://github.com/lanetb" target="_blank" rel="noopener noreferrer">
 					<div
 						class="absolute top-0 right-full w-full h-full bg-green-400 opacity-20 group-hover:translate-x-full z-0 duration-200"
 					/>
 				</a>
-				<a type='button' class="blueShadow fa-brands fa-linkedin fa-2xl text-6xl relative overflow-hidden group" href="https://www.linkedin.com/in/tommy-lane">
+				<a type='button' class="blueShadow fa-brands fa-linkedin fa-2xl text-6xl relative overflow-hidden group" href="https://www.linkedin.com/in/tommy-lane" target="_blank" rel="noopener noreferrer">
 					<div
 						class="absolute top-0 right-full w-full h-full bg-green-400 opacity-20 group-hover:translate-x-full z-0 duration-200"
 					/>
 				</a>
-				<a type="button" href="mailto:tommy.lane@verizon.net"
+				<a type="button" href="mailto:tommy.lane@verizon.net" target="_blank" rel="noopener noreferrer"
 					class="blueShadow mx-auto lg:mr-auto ml-0 text-base sm:text-lg md:text-xl poppins relative overflow-hidden px-6 py-3 pt-4 group rounded-full bg-white text-slate-950"
 				>
 					<div

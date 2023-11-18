@@ -18,12 +18,12 @@
         <p class="mx-auto text-sm opacity-70">or</p>
         <p class="">Hugh_jass@gmail.com</p> -->
         <p>tommy.lane@verizon.net</p>
-        <a type='button' class="z-[11] blueShadow fa-brands fa-github fa-2xl text-2xl  relative rounded-full" href="https://github.com/lanetb">
+        <a type='button' class="z-[11] blueShadow fa-brands fa-github fa-2xl text-2xl  relative rounded-full" href="https://github.com/lanetb" target="_blank" rel="noopener noreferrer">
 					<div
 						class="absolute top-0 right-full w-full h-full"
 					/>
 				</a>
-				<a type='button' class="z-[11] blueShadow fa-brands fa-linkedin fa-2xl text-2xl relative overflow-hidden " href="https://www.linkedin.com/in/tommy-lane">
+				<a type='button' class="z-[11] blueShadow fa-brands fa-linkedin fa-2xl text-2xl relative overflow-hidden " href="https://www.linkedin.com/in/tommy-lane" target="_blank" rel="noopener noreferrer">
 					<div
 						class="absolute top-0 right-full w-full h-full "
 					/>
